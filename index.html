@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html>
+<title>Website RevA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/index_files/parallax3_colour.jpeg');
+  min-height: 100%;
+}
+
+/* Second image (TEST) */
+.bgimg-2 {
+  background-image: url('/index_files/parallax1.jpeg');
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url('/index_files/parallax2.jpeg');
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">home</a>
+    <a href="#about me" class="w3-bar-item w3-button w3-hide-small">about me</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small">contact</a>
+    <a href="https://aeso-app-dash.herokuapp.com/" class="w3-bar-item w3-button">power app</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">about me</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">contact</a>
+    <!--<a href="https://aeso-app-dash.herokuapp.com/" class="w3-bar-item w3-button" onclick="toggleFunction()">power app</a>-->
+  </div>
+</div>
+
+<!-- First Parallax Image with NAME Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-xxxlarge w3-text-white w3-wide">Saul<span class="w3-hide-small"> Caverhill-Godkewitsch</span></span>
+  </div>
+</div>
+
+<!-- Container (Home Section) -->
+<div class="w3-content w3-container w3-padding-64" id="home">
+  <h3 class="w3-center">Hi, I'm Saul.</h3>
+  <p class="w3-center">Dad, husband, engineer.</p>
+    <br>
+    <p>I work at a unique cross section of business, engineering, and analytics, where I leverage data to help clients make better strategic decisions. I'm fascinated by the power industry, renewables, and the energy transition.</p>
+    <p>Ever wonder where your power comes from? I do, so I built a web app to find out:</p>
+    <div>
+        
+                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+            <div id="5469f4b7-5808-4ba6-815e-fd88463602d6" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+            <script type="text/javascript">
+                
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    
+                if (document.getElementById("5469f4b7-5808-4ba6-815e-fd88463602d6")) {
+                    Plotly.newPlot(
+                        '5469f4b7-5808-4ba6-815e-fd88463602d6',
+                        [{"alignmentgroup": "True", "customdata": [["Battle River #4 (BR4)"], ["Battle River #5 (BR5)"], ["Sundance #3 (SD3)"], ["Sundance #4 (SD4)"], ["Sundance #5 (SD5)"], ["Sundance #6 (SD6)"], ["Sheerness #2 (SH2)"], ["Sheerness #1 (SH1)"], ["Keephills #3 (KH3)"], ["Genesee #2 (GN2)"], ["Genesee #1 (GN1)"], ["Keephills #1 (KH1)"], ["Keephills #2 (KH2)"], ["Genesee #3 (GN3)"], ["BuckLake (PW01)"], ["Camrose (CRG1)*"], ["Caroline (SHCG)*"], ["Coaldale (COD1)"], ["Mulligan (MUL1)*"], ["Nexen Inc #2 (NX02)"], ["Saddle Hills (SDH1)"], ["Blackfalds (BFD1)"], ["University of Alberta (UOA1)*"], ["Base Plant (SCR1)"], ["Edson (TLM2)"], ["U of C Generator (UOC1)*"], ["Lindbergh (PEC1)*"], ["Bear Creek 2 (BCR2)"], ["Rainbow Lake #1 (RL1)"], ["AltaGas Harmattan (HMT1)"], ["Bear Creek 1 (BCRK)"], ["Kearl (IOR3)"], ["Foster Creek (EC04)"], ["Air Liquide Scotford #1 (ALS1)"], ["MEG1 Christina Lake (MEG1)"], ["Carseland Cogen (TC01)"], ["Redwater Cogen (TC02)"], ["Christina Lake (CL01)"], ["Primrose #1 (PR1)"], ["Fort Hills (FH1)"], ["Scotford Upgrader (APS1)"], ["Mahkeses (IOR1)"], ["Muskeg River (MKR1)"], ["Nabiye (IOR2)*"], ["Dow Hydrocarbon (DOWG)"], ["CNRL Horizon (CNR5)*"], ["MacKay River (MKRC)"], ["Poplar Creek (SCR5)"], ["Joffre #1 (JOF1)"], ["Syncrude #1 (SCL1)*"], ["Firebag (SCR6)"], ["Halkirk Wind Power Facility (HAL1)*"], ["BUL2 Bull Creek (BUL2)*"], ["BUL1 Bull Creek (BUL1)*"], ["Suncor Chin Chute (SCR3)*"], ["Cowley Ridge (CRE3)*"], ["Suncor Magrath (SCR2)*"], ["Enmax Taber (TAB1)*"], ["Castle River #1 (CR1)*"], ["Castle Rock Ridge 2 (CRR2)*"], ["Ardenville Wind (ARD1)*"], ["Ghost Pine (NEP1)*"], ["Oldman 2 Wind Farm 1 (OWF1)*"], ["Blue Trail Wind (BTR1)*"], ["Summerview 1 (IEW1)*"], ["Soderglen Wind (GWW1)*"], ["Summerview 2 (IEW2)*"], ["Kettles Hill (KHW1)*"], ["McBride Lake Windfarm (AKE1)*"], ["Wintering Hills (SCR4)*"], ["Castle Rock Wind Farm (CRR1)*"], ["Riverview (RIV1)*"], ["Whitla (WHT1)*"], ["Blackspring Ridge (BSR1)*"], ["Cavalier (EC01)"], ["Fort Nelson (FNG1)"], ["Nexen Inc #1 (NX01)"], ["Medicine Hat #1 (CMH1)"], ["ENMAX Calgary Energy Centre (CAL1)"], ["Shepard (EGC1)"], ["AB Newsprint (ANC1)"], ["Bantry (ALP1)"], ["Carson Creek (GEN5)"], ["Cloverbar #1 (ENC1)"], ["Cloverbar #3 (ENC3)"], ["Crossfield Energy Centre #1 (CRS1)"], ["Crossfield Energy Centre #2 (CRS2)"], ["Crossfield Energy Centre #3 (CRS3)"], ["Drywood (DRW1)"], ["Judy Creek (GEN6)"], ["Lethbridge Burdett (ME03)"], ["Lethbridge Coaldale (ME04)"], ["Lethbridge Taber (ME02)"], ["NPC1 Denis St. Pierre (NPC1)"], ["NPC2 JL Landry (NPC2)"], ["Northern Prairie Power Project (NPP1)"], ["Parkland (ALP2)"], ["Poplar Hill #1 (PH1)"], ["Rainbow #5 (RB5)"], ["Ralston (NAT1)"], ["Valley View 1 (VVW1)"], ["Valley View 2 (VVW2)"], ["West Pembina (PMB1)"], ["House Mountain (HSM1)"], ["Bellshill (BHL1)"], ["West Cadotte (WCD1)"], ["Cloverbar #2 (ENC2)"], ["H.R. Milner (HRM)"], ["Irrican Hydro (ICP1)"], ["Chin Chute (CHIN)"], ["Taylor Hydro (TAY1)"], ["Raymond Reservoir (RYMD)"], ["Dickson Dam (DKSN)"], ["Oldman River (OMRH)"], ["Bighorn Hydro (BIG)"], ["Bow River Hydro (BOW1)"], ["Brazeau Hydro (BRA)"], ["Gold Creek Facility (GOC1)"], ["NRGreen (NRG3)"], ["Brooks Solar (BSC1)"], ["Hull (HUL1)"], ["Innisfail (INF1)"], ["Vauxhall (VXH1)"], ["Slave Lake (SLP1)*"], ["Grande Prairie EcoPower (GPEC)"], ["Westlock (WST1)*"], ["Whitecourt Power (EAGL)"], ["Cancarb Medicine Hat (CCMH)"], ["Weyerhaeuser (WEY1)"], ["DAI1 Daishowa (DAI1)"], ["Weldwood #1 (WWD1)*"], ["APF Athabasca (AFG1)*"]], "hovertemplate": "Energy=%{x}<br>Total Net Generation (MW)=%{marker.color}<br>Generator=%{customdata[0]}<extra></extra>", "legendgroup": "", "marker": {"color": [0, 0, 0, 0, 0, 0, 146, 150, 177, 199, 202, 202, 202, 464, 0, 0, 0, 0, 0, 0, 0, 4, 5, 9, 9, 12, 13, 27, 35, 37, 52, 54, 67, 68, 71, 72, 74, 75, 77, 134, 136, 150, 151, 152, 154, 166, 167, 200, 210, 251, 376, 2, 4, 5, 12, 13, 16, 21, 29, 29, 43, 44, 46, 48, 54, 55, 58, 59, 62, 68, 76, 101, 162, 294, 3, 46, 47, 109, 182, 704, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 16, 49, 149, 3, 5, 6, 7, 14, 31, 36, 145, 311, 0, 0, 1, 1, 3, 4, 9, 11, 11, 22, 28, 39, 43, 43, 59], "coloraxis": "coloraxis"}, "name": "", "offsetgroup": "", "orientation": "v", "showlegend": false, "textposition": "auto", "type": "bar", "x": ["Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Combined Cycle", "Combined Cycle", "Combined Cycle", "Combined Cycle", "Combined Cycle", "Combined Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Hydro", "Hydro", "Hydro", "Hydro", "Hydro", "Hydro", "Hydro", "Hydro", "Hydro", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other"], "xaxis": "x", "y": [0, 0, 0, 0, 0, 0, 146, 150, 177, 199, 202, 202, 202, 464, 0, 0, 0, 0, 0, 0, 0, 4, 5, 9, 9, 12, 13, 27, 35, 37, 52, 54, 67, 68, 71, 72, 74, 75, 77, 134, 136, 150, 151, 152, 154, 166, 167, 200, 210, 251, 376, 2, 4, 5, 12, 13, 16, 21, 29, 29, 43, 44, 46, 48, 54, 55, 58, 59, 62, 68, 76, 101, 162, 294, 3, 46, 47, 109, 182, 704, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 16, 49, 149, 3, 5, 6, 7, 14, 31, 36, 145, 311, 0, 0, 1, 1, 3, 4, 9, 11, 11, 22, 28, 39, 43, 43, 59], "yaxis": "y"}, {"alignmentgroup": "True", "customdata": [["Battle River #4 (BR4)"], ["Battle River #5 (BR5)"], ["Sundance #3 (SD3)"], ["Sundance #4 (SD4)"], ["Sundance #5 (SD5)"], ["Sundance #6 (SD6)"], ["Sheerness #2 (SH2)"], ["Sheerness #1 (SH1)"], ["Keephills #3 (KH3)"], ["Genesee #2 (GN2)"], ["Genesee #1 (GN1)"], ["Keephills #1 (KH1)"], ["Keephills #2 (KH2)"], ["Genesee #3 (GN3)"], ["BuckLake (PW01)"], ["Camrose (CRG1)*"], ["Caroline (SHCG)*"], ["Coaldale (COD1)"], ["Mulligan (MUL1)*"], ["Nexen Inc #2 (NX02)"], ["Saddle Hills (SDH1)"], ["Blackfalds (BFD1)"], ["University of Alberta (UOA1)*"], ["Base Plant (SCR1)"], ["Edson (TLM2)"], ["U of C Generator (UOC1)*"], ["Lindbergh (PEC1)*"], ["Bear Creek 2 (BCR2)"], ["Rainbow Lake #1 (RL1)"], ["AltaGas Harmattan (HMT1)"], ["Bear Creek 1 (BCRK)"], ["Kearl (IOR3)"], ["Foster Creek (EC04)"], ["Air Liquide Scotford #1 (ALS1)"], ["MEG1 Christina Lake (MEG1)"], ["Carseland Cogen (TC01)"], ["Redwater Cogen (TC02)"], ["Christina Lake (CL01)"], ["Primrose #1 (PR1)"], ["Fort Hills (FH1)"], ["Scotford Upgrader (APS1)"], ["Mahkeses (IOR1)"], ["Muskeg River (MKR1)"], ["Nabiye (IOR2)*"], ["Dow Hydrocarbon (DOWG)"], ["CNRL Horizon (CNR5)*"], ["MacKay River (MKRC)"], ["Poplar Creek (SCR5)"], ["Joffre #1 (JOF1)"], ["Syncrude #1 (SCL1)*"], ["Firebag (SCR6)"], ["Halkirk Wind Power Facility (HAL1)*"], ["BUL2 Bull Creek (BUL2)*"], ["BUL1 Bull Creek (BUL1)*"], ["Suncor Chin Chute (SCR3)*"], ["Cowley Ridge (CRE3)*"], ["Suncor Magrath (SCR2)*"], ["Enmax Taber (TAB1)*"], ["Castle River #1 (CR1)*"], ["Castle Rock Ridge 2 (CRR2)*"], ["Ardenville Wind (ARD1)*"], ["Ghost Pine (NEP1)*"], ["Oldman 2 Wind Farm 1 (OWF1)*"], ["Blue Trail Wind (BTR1)*"], ["Summerview 1 (IEW1)*"], ["Soderglen Wind (GWW1)*"], ["Summerview 2 (IEW2)*"], ["Kettles Hill (KHW1)*"], ["McBride Lake Windfarm (AKE1)*"], ["Wintering Hills (SCR4)*"], ["Castle Rock Wind Farm (CRR1)*"], ["Riverview (RIV1)*"], ["Whitla (WHT1)*"], ["Blackspring Ridge (BSR1)*"], ["Cavalier (EC01)"], ["Fort Nelson (FNG1)"], ["Nexen Inc #1 (NX01)"], ["Medicine Hat #1 (CMH1)"], ["ENMAX Calgary Energy Centre (CAL1)"], ["Shepard (EGC1)"], ["AB Newsprint (ANC1)"], ["Bantry (ALP1)"], ["Carson Creek (GEN5)"], ["Cloverbar #1 (ENC1)"], ["Cloverbar #3 (ENC3)"], ["Crossfield Energy Centre #1 (CRS1)"], ["Crossfield Energy Centre #2 (CRS2)"], ["Crossfield Energy Centre #3 (CRS3)"], ["Drywood (DRW1)"], ["Judy Creek (GEN6)"], ["Lethbridge Burdett (ME03)"], ["Lethbridge Coaldale (ME04)"], ["Lethbridge Taber (ME02)"], ["NPC1 Denis St. Pierre (NPC1)"], ["NPC2 JL Landry (NPC2)"], ["Northern Prairie Power Project (NPP1)"], ["Parkland (ALP2)"], ["Poplar Hill #1 (PH1)"], ["Rainbow #5 (RB5)"], ["Ralston (NAT1)"], ["Valley View 1 (VVW1)"], ["Valley View 2 (VVW2)"], ["West Pembina (PMB1)"], ["House Mountain (HSM1)"], ["Bellshill (BHL1)"], ["West Cadotte (WCD1)"], ["Cloverbar #2 (ENC2)"], ["H.R. Milner (HRM)"], ["Irrican Hydro (ICP1)"], ["Chin Chute (CHIN)"], ["Taylor Hydro (TAY1)"], ["Raymond Reservoir (RYMD)"], ["Dickson Dam (DKSN)"], ["Oldman River (OMRH)"], ["Bighorn Hydro (BIG)"], ["Bow River Hydro (BOW1)"], ["Brazeau Hydro (BRA)"], ["Gold Creek Facility (GOC1)"], ["NRGreen (NRG3)"], ["Brooks Solar (BSC1)"], ["Hull (HUL1)"], ["Innisfail (INF1)"], ["Vauxhall (VXH1)"], ["Slave Lake (SLP1)*"], ["Grande Prairie EcoPower (GPEC)"], ["Westlock (WST1)*"], ["Whitecourt Power (EAGL)"], ["Cancarb Medicine Hat (CCMH)"], ["Weyerhaeuser (WEY1)"], ["DAI1 Daishowa (DAI1)"], ["Weldwood #1 (WWD1)*"], ["APF Athabasca (AFG1)*"]], "hovertemplate": "Energy=%{x}<br>Maximum Capability (MW)=%{y}<br>Generator=%{customdata[0]}<extra></extra>", "legendgroup": "", "marker": {"color": "rgb(210,210,210)"}, "name": "Maximum Capability (MW)", "offsetgroup": "", "orientation": "v", "showlegend": false, "textposition": "auto", "type": "bar", "x": ["Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Coal", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Cogen", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Wind", "Combined Cycle", "Combined Cycle", "Combined Cycle", "Combined Cycle", "Combined Cycle", "Combined Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Simple Cycle", "Hydro", "Hydro", "Hydro", "Hydro", "Hydro", "Hydro", "Hydro", "Hydro", "Hydro", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other", "Other"], "xaxis": "x", "y": [155, 385, 368, 406, 406, 401, 390, 400, 463, 400, 400, 395, 395, 466, 5, 10, 19, 5, 5, 220, 10, 6, 39, 50, 13, 12, 16, 36, 47, 45, 64, 84, 98, 106, 202, 95, 92, 100, 100, 199, 195, 180, 202, 195, 326, 203, 207, 376, 474, 510, 497, 150, 16, 13, 30, 20, 30, 81, 39, 29, 68, 82, 46, 66, 66, 71, 66, 63, 73, 88, 77, 105, 202, 300, 120, 73, 120, 255, 320, 868, 63, 7, 15, 48, 101, 48, 48, 48, 6, 15, 7, 6, 8, 11, 9, 105, 10, 48, 50, 20, 50, 50, 13, 6, 5, 20, 101, 208, 7, 15, 14, 21, 15, 32, 120, 320, 350, 5, 16, 15, 25, 22, 22, 9, 27, 18, 25, 42, 48, 52, 50, 131], "yaxis": "y"}],
+                        {"bargroupgap": 0.1, "barmode": "group", "coloraxis": {"colorbar": {"title": {"text": "Total Net Generation (MW)"}}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "legend": {"tracegroupgap": 0}, "margin": {"t": 60}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Total Net Generation and Maximum Capacity by energy source in Alberta, Canada"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Energy"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Power (MW)"}}},
+                        {"responsive": true}
+                    )
+                };
+                
+            </script>
+        </div>
+    <p>If you want to see where Alberta's power is being produced right now, take a look at the <a href="https://aeso-app-dash.herokuapp.com/" style="text-decoration: none; color:rgb(230, 130, 10);">live version</a> of the app. Each block represents a generating source in Alberta. The Total Net Generation delivered by each source is highlighted  according to the colour bar (e.g., the source delivering the most power is yellow). Sources are grouped on the x-axis according to the type of energy. Maximum Capabilities are shown in the adjacent grey stack. Hover over blocks for more information, and zoom in for detail. The data shown here was retrieved on July 2, 2020 at 20:02 from AESO's <a href="http://ets.aeso.ca/ets_web/ip/Market/Reports/CSDReportServlet" style="text-decoration: none; color:rgb(230, 130, 10);">Current Supply Demand Report</a>.</p>
+    <!-- 
+    <p>AESO's most recent <a href="https://www.aeso.ca/assets/Uploads/AESO-2019-LTO-updated-10-17-19.pdf" style="text-decoration: none; color:rgb(230, 130, 10);">long term outlook</a> (2019) forecasts that the Alberta power market is poised for significant change between now and 2039:</p>
+    <ul style="margin-top:-10px;">
+        <li>New generation capacity was expected to grow by 13 GW to meet a compound annual load growth rate of 0.9% for a total capacity of almost 23 GW.</li>
+        <li>5 GW of coal capacity was expected to co-fire or convert to natural gas beginning in 2021</li>
+        <li>Development of renewable generation capacity will be driven by the (former) Government of Alberta's Renewable Electricity Program projects as well as unsubsidized projects in the competitive market.</li>
+    </ul>
+    <p>It's important to note, however, that recent events (COVID-19, suppressed price of oil) are having direct, immediate and ongoing impacts on power demand, and it's unlikely that growth will occur as described in the 2019 LTO.</p>
+    -->
+  </div>
+
+<!-- Second Parallax Image with ABOUT ME Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="about me">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">about me</span>
+  </div>
+</div>
+
+<!-- Container (ABOUT ME Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about me">
+    <h3 class="w3-center">I love to learn.</h3>
+    <p>On the personal side of things...</p>
+    <p>I'm a registered <a href="https://www.apega.ca/" style="text-decoration: none; color:rgb(230, 130, 10);">professional engineer</a> (P.Eng.)</p>
+    <p>I like to <a href="pages/gallery.html" style="text-decoration: none; color:rgb(230, 130, 10);">travel, bake and hike</a>.</p>
+    <p>I have an <a href="https://doi.org/10.7939/R3D50G33W" style="text-decoration: none; color:rgb(230, 130, 10);">MSc</a> (give my thesis a read if you have trouble sleeping, it's been known to help with that).</p>
+    <p>I used to research lab-on-chip technology for point-of-care diagnostic testing. Some of the work is published <a href="https://doi.org/10.1109/JMEMS.2016.2536561" style="text-decoration: none; color:rgb(230, 130, 10);">here</a>, <a href="https://doi.org/10.1088/0960-1317/25/7/075005" style="text-decoration: none; color:rgb(230, 130, 10);">here</a> and <a href="https://doi.org/10.1016/j.sna.2013.01.035" style="text-decoration: none; color:rgb(230, 130, 10);">here</a>.</p>
+    <p>And before that, I researched <a href="https://doi.org/10.1016/j.neuroimage.2010.03.072" style="text-decoration: none; color:rgb(230, 130, 10);">brains</a>.</p>
+    <p>These days I <a href="https://github.com/saulcg" style="text-decoration: none; color:rgb(230, 130, 10);">program things</a> like machine-learning based NHL Stanley Cup winner predictors (and this website).</p>
+    <p>Impressionism is my favourite style of art, and although I haven't been to many galleries, I really enjoyed the <a href="https://www.barnesfoundation.org/" style="text-decoration: none; color:rgb(230, 130, 10);">Barnes Foundation</a> in Philadelphia.</p>
+</div>
+
+<!-- Third Parallax Image with CONTACT Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">contact</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">Let's talk!</h3>
+    <p class="w3-center">hello[at]saulcg.ca</p>
+    <p class="w3-center"><a href="www.linkedin.com/in/saulcg" style="text-decoration: none; color:rgb(230, 130, 10);">LinkedIn</a></p>
+    <p class="w3-center"><a href="https://github.com/saulcg" style="text-decoration: none; color:rgb(230, 130, 10);">GitHub</a></p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+  </div>
+  <p>© Saul CG 2020</p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
